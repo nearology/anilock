@@ -1,0 +1,106 @@
+@extends("layouts.master")
+
+@section("title", "alerts")
+
+@section("stylesheets")
+    <link rel="stylesheet" href="assets/css/datatables/datatables.min.css">
+@endsection
+
+@section("container")
+    @include("includes.preloader")
+    <div class="page">
+        @include("includes.header")
+        <div class="page-content d-flex align-items-stretch">
+            @include("includes.sidebar")
+            <div class="content-inner">
+                <div class="container-fluid">
+                    <div class="row">
+                        @include("includes.path-header", [
+                            "title" => "هشدار ها و اعلان ها",
+                        ])
+                    </div>
+                    <div class="row" style="overflow-y:auto">
+                        <div class="col-12">
+                            <div class="widget has-shadow">
+                                <div class="widget-header bordered no-actions d-flex align-items-center">
+                                    <h2>هشدار ها و اعلان ها</h2>
+                                </div>
+                                <div class="widget-body">
+                                    <div class="table-responsive">
+                                        <div id="export-table_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4 no-footer">
+                                            <table id="export-table" class="table mb-0 dataTable no-footer export-table" role="grid" aria-describedby="export-table_info">
+                                                <thead>
+                                                    <tr role="row">
+                                                        <th class="sorting_asc" tabindex="0" aria-controls="export-table" rowspan="1" colspan="1" aria-sort="ascending" aria-label="شماره: activate to sort column descending">
+                                                            شماره
+                                                        </th>
+                                                        <th class="sorting" tabindex="0" aria-controls="export-table" rowspan="1" colspan="1" aria-label="دستگاه: activate to sort column ascending">
+                                                            دستگاه
+                                                        </th>
+                                                        <th class="sorting" tabindex="0" aria-controls="export-table" rowspan="1" colspan="1" aria-label="کاربر: activate to sort column ascending">
+                                                            کاربر
+                                                        </th>
+                                                        <th class="sorting" tabindex="0" aria-controls="export-table" rowspan="1" colspan="1" aria-label="فیلد: activate to sort column ascending">
+                                                            فیلد
+                                                        </th>
+                                                        <th class="sorting" tabindex="0" aria-controls="export-table" rowspan="1" colspan="1" aria-label="داده: activate to sort column ascending">
+                                                            داده
+                                                        </th>
+                                                        <th class="sorting" tabindex="0" aria-controls="export-table" rowspan="1" colspan="1" aria-label="تاریخ تغییر: activate to sort column ascending">
+                                                            تاریخ تغییر
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    @foreach($logs as $idx => $log)
+                                                        <tr>
+                                                            <td>
+                                                                <span class="tabledit-span tabledit-identifier">{{ $idx + 1 }}</span>
+                                                            </td>
+                                                            <td class="tabledit-view-mode">
+                                                                <span class="tabledit-span">{{ $log->device->name }}</span>
+                                                            </td>
+                                                            <td class="tabledit-view-mode">
+                                                                <span class="tabledit-span">{{ $log->username }}</span>
+                                                            </td>
+                                                            <td class="tabledit-view-mode">
+                                                                <span class="tabledit-span">{{ $log->fieldName() }}</span>
+                                                            </td>
+                                                            <td class="tabledit-view-mode">
+                                                                <span class="tabledit-span">{{ $log->value }}</span>
+                                                            </td>
+                                                            <td class="tabledit-view-mode">
+                                                                <span class="tabledit-span">{{ $log->updated_at ? jdate($log->updated_at)->format('Y/m/d H:i:s') : '-' }}</span>
+                                                            </td>
+                                                        </tr>
+                                                    @endforeach
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @include("includes.footer")
+                @include("includes.profile-editor")
+            </div>
+        </div>
+    </div>
+@endsection
+
+@section("snippets")
+    <script src="assets/vendors/js/nicescroll/nicescroll.min.js"></script>
+    <script src="assets/vendors/js/datatables/datatables.js"></script>
+    <script src="assets/vendors/js/datatables/dataTables.buttons.min.js"></script>
+    <script src="assets/vendors/js/datatables/jszip.min.js"></script>
+    <script src="assets/vendors/js/datatables/buttons.html5.min.js"></script>
+    <script src="assets/vendors/js/datatables/pdfmake.min.js"></script>
+    <script src="assets/vendors/js/datatables/vfs_fonts.js"></script>
+    <script src="assets/vendors/js/datatables/buttons.print.min.js"></script>
+    <script src="assets/js/pages/export-table.js"></script>
+    <script src="assets/js/pages/devices.js?8"></script>
+    <script src="assets/vendors/js/noty/noty.min.js"></script>
+    <script src="assets/js/pages/notifies.js"></script>
+@endsection

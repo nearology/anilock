@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<!--
+Item Name: SeenBoard - Web App & Admin Dashboard Template
+Version: 1.0
+Author: Mt.rezaei
+-->
+<html lang="fa">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>SeenBoard - Social Dashboard</title>
+        <meta name="description" content="SeenBoard is a Web App and Admin Dashboard Template built with Bootstrap 4">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+        <!-- Stylesheet -->
+        <!-- Font Iran licence -->
+        <link rel="stylesheet" href="assets/css/fontiran.css">
+
+        <link rel="stylesheet" href="assets/vendors/css/base/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/vendors/css/base/seenboard-1.0.css">
+        <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    </head>
+    <body id="page-top">
+        <!-- Begin Preloader -->
+        <div id="preloader">
+            <div class="canvas">
+                <img src="assets/img/logo.png" alt="logo" class="loader-logo">
+                <div class="spinner"></div>   
+            </div>
+        </div>
+        <!-- End Preloader -->
+        <div class="page db-social">
+            <!-- Begin Header -->
+            <header class="header">
+                <nav class="navbar fixed-top">        
+                    <!-- Begin Search Box-->
+                    <div class="search-box">
+                        <button class="dismiss"><i class="ion-close-round"></i></button>
+                        <form id="searchForm" action="#" role="search">
+                            <input type="search" placeholder="جستجو کنید ..." class="form-control">
+                        </form>
+                    </div>
+                    <!-- End Search Box-->
+                    <!-- Begin Topbar -->
+                    <div class="navbar-holder d-flex align-items-center align-middle justify-content-between">
+                        <!-- Begin Logo -->
+                        <div class="navbar-header">
+                            <a href="db-social.html" class="navbar-brand">
+                                <div class="brand-image brand-big">
+                                    <img src="assets/img/logo.png" alt="logo" style="width: 70px;" class="logo-big">
+                                </div>
+                                <div class="brand-image brand-small">
+                                    <img src="assets/img/logo.png" alt="logo" class="logo-small">
+                                </div>
+                            </a>
+                            <!-- Toggle Button -->
+                            <a id="toggle-btn" href="#" class="menu-btn active">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                            <!-- End Toggle -->
+                        </div>
+                        <!-- End Logo -->
+                        <!-- Begin Navbar Menu -->
+                        <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center pull-right">
+                            <!-- Search -->
+                            <li class="nav-item d-flex align-items-center"><a id="search" href="#"><i class="la la-search"></i></a></li>
+                            <!-- End Search -->
+                            <!-- Begin Notifications -->
+                            <li class="nav-item dropdown"><a id="notifications" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link"><i class="la la-bell animated infinite swing"></i><span class="badge-pulse"></span></a>
+                                <ul aria-labelledby="notifications" class="dropdown-menu notification">
+                                    <li>
+                                        <div class="notifications-header">
+                                            <div class="title">اعلان ها (4)</div>
+                                            <div class="notifications-overlay"></div>
+                                            <img src="assets/img/notifications/01.jpg" alt="..." class="img-fluid">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="message-icon">
+                                                <i class="la la-user"></i>
+                                            </div>
+                                            <div class="message-body">
+                                                <div class="message-body-heading">
+                                                    ثبت نام کاربر جدید
+                                                </div>
+                                                <span class="date">2 ساعت قبل</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="message-icon">
+                                                <i class="la la-calendar-check-o"></i>
+                                            </div>
+                                            <div class="message-body">
+                                                <div class="message-body-heading">
+                                                    رویداد جدید
+                                                </div>
+                                                <span class="date">7 ساعت قبل</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="message-icon">
+                                                <i class="la la-history"></i>
+                                            </div>
+                                            <div class="message-body">
+                                                <div class="message-body-heading">
+                                                    سرور دوباره راه اندازی شد
+                                                </div>
+                                                <span class="date">7 ساعت قبل</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="message-icon">
+                                                <i class="la la-twitter"></i>
+                                            </div>
+                                            <div class="message-body">
+                                                <div class="message-body-heading">
+                                                    شما 3 فالوور جدید دارید
+                                                </div>
+                                                <span class="date">10 ساعت قبل</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a rel="nofollow" href="#" class="dropdown-item all-notifications text-center">مشاهده همه اعلانها</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- End Notifications -->
+                            <!-- User -->
+                            <li class="nav-item dropdown"><a id="user" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link"><img src="assets/img/avatar/avatar-01.jpg" alt="..." class="avatar rounded-circle"></a>
+                                <ul aria-labelledby="user" class="user-size dropdown-menu">
+                                    <li class="welcome">
+                                        <a href="#" class="edit-profil"><i class="la la-gear"></i></a>
+                                        <img src="assets/img/avatar/avatar-01.jpg" alt="..." class="rounded-circle">
+                                    </li>
+                                    <li>
+                                        <a href="pages-profile.html" class="dropdown-item">
+                                            پروفایل
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="app-mail.html" class="dropdown-item">
+                                            پیامها
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item no-padding-bottom">
+                                            تنظیمات
+                                        </a>
+                                    </li>
+                                    <li class="separator"></li>
+                                    <li>
+                                        <a href="pages-faq.html" class="dropdown-item no-padding-top">
+                                            پرسش و پاسخ
+                                        </a>
+                                    </li>
+                                    <li><a rel="nofollow" href="pages-login.html" class="dropdown-item logout text-center"><i class="ti-power-off"></i></a></li>
+                                </ul>
+                            </li>
+                            <!-- End User -->
+                            <!-- Begin Quick Actions -->
+                            <li class="nav-item"><a href="#off-canvas" class="open-sidebar"><i class="la la-ellipsis-h"></i></a></li>
+                            <!-- End Quick Actions -->
+                        </ul>
+                        <!-- End Navbar Menu -->
+                    </div>
+                    <!-- End Topbar -->
+                </nav>
+            </header>
+            <!-- End Header -->
+            <!-- Begin Page Content -->
+            <div class="page-content d-flex align-items-stretch">
+                <div class="compact-sidebar light-sidebar has-shadow">
+                    <!-- Begin Side Navbar -->
+                    <nav class="side-navbar box-scroll sidebar-scroll">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <i class="la la-envelope la-2x"></i>
+                                    <span class="text-white">همه (44)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <i class="la la-eye-slash la-2x"></i>
+                                    <span class="text-white">خوانده نشده (4)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <i class="la la-exclamation-triangle la-2x"></i>
+                                    <span class="text-white">مهم (8)</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="sidebar-separator"></div>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <i class="la la-users la-2x"></i>
+                                    <span class="text-white">گروه (6)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <i class="la la-male la-2x"></i>
+                                    <span class="text-white">تیم (43)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <i class="la la-user la-2x"></i>
+                                    <span class="text-white">دوستان (10)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <i class="la la-play la-2x"></i>
+                                    <span class="text-white">رسانه ها (40)</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="sidebar-separator"></div>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <i class="la la-cog la-2x"></i>
+                                    <span class="text-white">تنظیمات</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <i class="la la-question-circle la-2x"></i>
+                                    <span class="text-white">کمک</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="sidebar-separator"></div>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="db-default.html">
+                                    <i class="la la-angle-left la-2x"></i>
+                                    <span class="text-white">برگشت به عقب</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- End Side Navbar -->
+                </div>
+                <!-- End Left Sidebar -->
+                <!-- Begin Content -->
+                <div class="content-inner compact">
+                    <!-- Begin Jumbotron -->
+					<div class="jumbotron jumbotron-fluid"></div>
+                    <!-- End Jumbotron -->
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-11">
+                                <!-- Start Head Profile -->
+                                <div class="widget head-profile has-shadow">
+                                    <div class="widget-body pb-0">
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col-xl-4 col-md-4 d-flex justify-content-lg-start justify-content-md-start justify-content-center">
+                                                <ul>
+                                                    <li>
+                                                        <div class="counter">6234</div>
+                                                        <div class="heading">دنبال کننده</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="counter">357</div>
+                                                        <div class="heading">لایک</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="counter">23</div>
+                                                        <div class="heading">محصول</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-4 col-md-4 d-flex justify-content-center">
+                                                <div class="image-default">
+                                                    <img class="rounded-circle" src="assets/img/avatar/avatar-01.jpg" alt="...">
+                                                </div>
+                                                <div class="infos">
+                                            <h2>مرتضی رضائی</h2>
+                                            <div class="location">ایران،تهران،سعادت آباد</div>
+                                        </div>
+                                        </div>
+                                        <div class="col-xl-4 col-md-4 d-flex justify-content-lg-end justify-content-md-end justify-content-center">
+                                            <div class="follow">
+                                                <a class="btn btn-gradient-01" href="#"><i class="la la-check"></i>دنبال کردن</a>
+                                                <div class="actions dark">
+                                                    <div class="dropdown">
+                                                        <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">
+                                                            <i class="la la-ellipsis-h"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu">
+                                                            <a href="#" class="dropdown-item">
+                                                                گزارش
+                                                            </a>
+                                                            <a href="#" class="dropdown-item">
+                                                                بلاک
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <ul class="head-nav nav nav-tabs justify-content-center">
+                                            <li><a class="active" href="db-social.html">شبکه اجتماعی</a></li>
+                                            <li><a href="pages-about.html">درباره ما</a></li>
+                                            <li><a href="pages-friends.html">دوستان</a></li>
+                                            <li><a href="javascript:void(0);">عکس ها</a></li>
+                                            <li><a href="javascript:void(0);">ویدئوها</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- End Head Profile -->
+                                <div class="row">
+                                    <div class="col-xl-3 column">
+                                        <!-- Begin About -->
+                                        <div class="widget has-shadow">
+                                            <div class="widget-header bordered no-actions d-flex align-items-center">
+                                                <h5>درباره من</h5>
+                                            </div>
+                                            <div class="widget-body">
+                                                <p>
+                                                    سلام , من مرتضی رضائی، طراح رابط کاربری وب و موبایل هستم، بیش از 4 سال است در این حرفه مشفولم و در حال حاضر فریلنسرم.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- End About -->
+                                        <!-- Begin Twitter Feed -->
+                                        <div class="widget has-shadow">
+                                            <div class="widget-header bordered no-actions d-flex align-items-center">
+                                                <h5>اخبار توییتر</h5>
+                                            </div>
+                                            <div class="widget-body p-0">
+                                                <ul class="list-group w-100">
+                                                    <li class="list-group-item">
+                                                        <div class="media">
+                                                            <div class="media-body align-self-center">
+                                                                <div class="text-dark pb-2">
+                                                                    <i class="ion-social-twitter align-middle text-twitter pr-2"></i>@mt.rezaei
+                                                                </div>
+                                                                <p>
+                                                                    قالب داشبورد مدیریتی سین بورد در استودیو سپید هنر و به دست مرتضی رضائی طراحی و منتشر شد. <a href="#" class="text-twitter">#سین_بورد</a>
+                                                                </p>
+                                                                <small>1 ساعت قبل</small>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="media">
+                                                            <div class="media-body align-self-center">
+                                                                <div class="text-dark pb-2">
+                                                                    <i class="ion-social-twitter align-middle text-twitter pr-2"></i>@mt.rezaei
+                                                                </div>
+                                                                <p>
+                                                                    قالب داشبورد مدیریتی سین بورد در استودیو سپید هنر و به دست مرتضی رضائی طراحی و منتشر شد.
+                                                                    <a href="#" class="text-twitter">#Mt.rezaei</a>
+                                                                </p>
+                                                                <small>2 ساعت قبل</small>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- End Twitter Feed -->
+                                        <!-- Begin Blog Posts -->
+                                        <div class="widget has-shadow">
+                                            <div class="widget-header bordered no-actions d-flex align-items-center">
+                                                <h5>پست های بلاگ</h5>
+                                            </div>
+                                            <div class="widget-body p-0">
+                                                <ul class="list-group w-100">
+                                                    <li class="list-group-item">
+                                                        <div class="media">
+                                                            <div class="media-body align-self-center">
+                                                                <h3 class="mb-3">عنوان پست 1 بلاگ</h3>
+                                                                <p>
+                                                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                                                                </p>
+                                                                <small>1 ساعت قبل</small>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="media">
+                                                            <div class="media-body align-self-center">
+                                                                <h3 class="mb-3">عنوان پست 2 بلاگ</h3>
+                                                                <p>
+                                                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                                                                </p>
+                                                                <small>2 ساعت قبل</small>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- End Blog Posts -->
+                                    </div>
+                                    <!-- End Col -->
+                                    <!-- Begin Timeline -->
+                                    <div class="col-xl-6">
+                                        <!-- Begin Widget -->
+                                        <div class="widget has-shadow">
+                                            <!-- Begin Widget Header -->
+                                            <div class="widget-header d-flex align-items-center">
+                                                <div class="user-image">
+                                                    <img class="rounded-circle" src="assets/img/avatar/avatar-01.jpg" alt="...">
+                                                </div>
+                                                <div class="d-flex flex-column mr-auto">
+                                                    <div class="title">
+                                                        <span class="username">مرتضی رضائی</span>
+                                                    </div>
+                                                    <div class="time">35 دقیقه قبل</div>
+                                                </div>
+                                                <div class="widget-options">
+                                                    <div class="dropdown">
+                                                        <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">
+                                                            <i class="la la-ellipsis-h"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu">
+                                                            <a href="javascript:void(0);" class="dropdown-item"> 
+                                                                <i class="la la-edit"></i>ویرایش پست
+                                                            </a>
+                                                            <a href="javascript:void(0);" class="dropdown-item"> 
+                                                                <i class="la la-trash"></i>حذف پست
+                                                            </a>
+                                                            <a href="javascript:void(0);" class="dropdown-item"> 
+                                                                <i class="la la-bell-slash"></i>غیرفعال سازی اعلان ها
+                                                            </a>
+                                                            <a href="javascript:void(0);" class="dropdown-item faq"> 
+                                                                <i class="la la-question-circle"></i>پرسش و پاسخ
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Widget Header -->
+                                            <!-- Begin Widget Body -->
+                                            <div class="widget-body">
+                                                <p>
+                                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                                                </p>
+                                            </div>
+                                            <!-- End Widget Body -->
+                                            <!-- Begin Widget Footer -->
+                                            <div class="widget-footer d-flex align-items-center">
+                                                <div class="col-xl-8 col-md-8 col-7 no-padding d-flex justify-content-start">
+                                                    <div class="users-like">
+                                                        <a href="javascript:void(0);">
+                                                            <img src="assets/img/avatar/avatar-01.jpg" class="img-fluid rounded-circle" alt="...">
+                                                        </a>
+                                                        <a href="javascript:void(0);">
+                                                            <img src="assets/img/avatar/avatar-02.jpg" class="img-fluid rounded-circle" alt="...">
+                                                        </a>
+                                                        <a href="javascript:void(0);">
+                                                            <img src="assets/img/avatar/avatar-03.jpg" class="img-fluid rounded-circle" alt="...">
+                                                        </a>
+                                                        <a href="javascript:void(0);">
+                                                            <img src="assets/img/avatar/avatar-09.jpg" class="img-fluid rounded-circle" alt="...">
+                                                        </a>
+                                                        <a class="view-more" href="javascript:void(0);">
+                                                            +4
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-md-4 col-5 no-padding d-flex justify-content-end">
+                                                    <div class="meta">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <i class="la la-comment"></i><span class="numb">12</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <i class="la la-heart-o"></i><span class="numb">30</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Widget Footer -->
+                                            <!-- Begin Comments -->
+                                            <div class="comments">
+                                                <div class="comments-header d-flex align-items-center">
+                                                    <div class="user-image">
+                                                        <img class="rounded-circle" src="assets/img/avatar/avatar-03.jpg" alt="...">
+                                                    </div>
+                                                    <div class="d-flex flex-column mr-auto">
+                                                        <div class="title">
+                                                            <span class="username">محمد نوری</span>
+                                                        </div>
+                                                        <div class="time">20 دقیقه قبل</div>
+                                                    </div>
+                                                </div>
+                                                <div class="comments-body">
+                                                    <p>
+                                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                                                    </p>
+                                                </div>
+                                                <div class="comments-footer d-flex align-items-center">
+                                                    <div class="meta">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <i class="la la-flag"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <span class="rep">پاسخ</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Comments -->
+                                            <!-- Begin Reply -->
+                                            <div class="reply">
+                                                <div class="reply-header d-flex align-items-center">
+                                                    <div class="user-image">
+                                                        <img class="rounded-circle" src="assets/img/avatar/avatar-04.jpg" alt="...">
+                                                    </div>
+                                                    <div class="d-flex flex-column mr-auto">
+                                                        <div class="title">
+                                                            <span class="username">علی نیکو</span>
+                                                        </div>
+                                                        <div class="time">22 دقیقه قبل</div>
+                                                    </div>
+                                                </div>
+                                                <div class="reply-body">
+                                                    <p>
+                                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                                                    </p>
+                                                </div>
+                                                <div class="reply-footer d-flex align-items-center">
+                                                    <div class="meta">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <i class="la la-flag"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <span class="rep">پاسخ</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="reply">
+                                                <div class="reply-header d-flex align-items-center">
+                                                    <div class="user-image">
+                                                        <img class="rounded-circle" src="assets/img/avatar/avatar-06.jpg" alt="...">
+                                                    </div>
+                                                    <div class="d-flex flex-column mr-auto">
+                                                        <div class="title">
+                                                            <span class="username">مرتضی حیدری</span>
+                                                        </div>
+                                                        <div class="time">24 دقیقه قبل</div>
+                                                    </div>
+                                                </div>
+                                                <div class="reply-body">
+                                                    <p>
+                                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                                                    </p>
+                                                </div>
+                                                <div class="reply-footer d-flex align-items-center">
+                                                    <div class="meta">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <i class="la la-flag"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <span class="rep">پاسخ</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Reply -->
+                                            <!-- Begin Publisher -->
+                                            <div class="publisher publisher-multi">
+                                                <textarea class="publisher-input" rows="3" placeholder="افزودن نظر"></textarea>
+                                                <div class="publisher-bottom d-flex justify-content-end">
+                                                    <a class="publisher-btn" href="javascript:void(0);"><i class="la la-smile-o"></i></a>
+                                                    <a class="publisher-btn" href="javascript:void(0);"><i class="la la-camera"></i></a>
+                                                    <button class="btn btn-gradient-01">ارسال نظر</button>
+                                                </div>
+                                            </div>
+                                            <!-- End Publisher -->
+                                        </div>
+                                        <!-- End Widget -->
+                                        <!-- Begin Widget -->
+                                        <div class="widget has-shadow">
+                                            <!-- Begin Widget Header -->
+                                            <div class="widget-header d-flex align-items-center">
+                                                <div class="user-image">
+                                                    <img class="rounded-circle" src="assets/img/avatar/avatar-01.jpg" alt="...">
+                                                </div>
+                                                <div class="d-flex flex-column mr-auto">
+                                                    <div class="title">
+                                                        <span class="username">مرتضی رضائی</span> یک تصویر اشتراک گذاری کرده است
+                                                    </div>
+                                                    <div class="time">42 دقیقه قبل</div>
+                                                </div>
+                                                <div class="widget-options">
+                                                    <div class="dropdown">
+                                                        <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">
+                                                            <i class="la la-ellipsis-h"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu">
+                                                            <a href="javascript:void(0);" class="dropdown-item"> 
+                                                                <i class="la la-edit"></i>ویرایش پست
+                                                            </a>
+                                                            <a href="javascript:void(0);" class="dropdown-item"> 
+                                                                <i class="la la-trash"></i>حذف پست
+                                                            </a>
+                                                            <a href="javascript:void(0);" class="dropdown-item"> 
+                                                                <i class="la la-bell-slash"></i>غیر فعال کردن اعلانها
+                                                            </a>
+                                                            <a href="javascript:void(0);" class="dropdown-item faq"> 
+                                                                <i class="la la-question-circle"></i>پرسش و پاسخ
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Widget Header -->
+                                            <!-- Begin Widget Body -->
+                                            <div class="widget-body">
+                                                <div class="content-img">
+                                                    <a href="javascript:void(0);">
+                                                        <img src="assets/img/background/01.jpg" class="img-fluid rounded" alt="...">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!-- End Widget Body -->
+                                            <!-- Begin Widget Footer -->
+                                            <div class="widget-footer d-flex align-items-center">
+                                                <div class="col no-padding d-flex justify-content-start">
+                                                    <div class="users-like">
+                                                        <a href="javascript:void(0);">
+                                                            <img src="assets/img/avatar/avatar-03.jpg" class="img-fluid rounded-circle" alt="...">
+                                                        </a>
+                                                        <a href="javascript:void(0);">
+                                                            <img src="assets/img/avatar/avatar-05.jpg" class="img-fluid rounded-circle" alt="...">
+                                                        </a>
+                                                        <a href="javascript:void(0);">
+                                                            <img src="assets/img/avatar/avatar-07.jpg" class="img-fluid rounded-circle" alt="...">
+                                                        </a>
+                                                        <a href="javascript:void(0);">
+                                                            <img src="assets/img/avatar/avatar-04.jpg" class="img-fluid rounded-circle" alt="...">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col no-padding d-flex justify-content-end">
+                                                    <div class="meta">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <i class="la la-comment"></i><span class="numb">38</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <i class="la la-heart-o"></i><span class="numb">94</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Widget Footer -->
+                                            <!-- Begin Comments -->
+                                            <div class="comments">
+                                                <div class="comments-header d-flex align-items-center">
+                                                    <div class="user-image">
+                                                        <img class="rounded-circle" src="assets/img/avatar/avatar-03.jpg" alt="...">
+                                                    </div>
+                                                    <div class="d-flex flex-column mr-auto">
+                                                        <div class="title">
+                                                            <span class="username">محمد نوری</span>
+                                                        </div>
+                                                        <div class="time">2 دقیقه قبل</div>
+                                                    </div>
+                                                </div>
+                                                <div class="comments-body">
+                                                    <p>
+                                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                                                    </p>
+                                                </div>
+                                                <div class="comments-footer d-flex align-items-center">
+                                                    <div class="meta">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <i class="la la-flag"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">
+                                                                    <span class="rep">پاسخ</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Comments -->
+                                            <!-- Begin Publisher -->
+                                            <div class="publisher publisher-multi">
+                                                <textarea class="publisher-input" rows="3" placeholder="افزودن نظر"></textarea>
+                                                <div class="publisher-bottom d-flex justify-content-end">
+                                                    <a class="publisher-btn" href="javascript:void(0);"><i class="la la-smile-o"></i></a>
+                                                    <a class="publisher-btn" href="javascript:void(0);"><i class="la la-camera"></i></a>
+                                                    <button class="btn btn-gradient-01">ارسال نظر</button>
+                                                </div>
+                                            </div>
+                                            <!-- End Publisher -->
+                                        </div>
+                                        <!-- End Widget -->
+                                    </div>
+                                    <!-- End Timeline -->
+                                    <!-- Begin Column -->
+                                    <div class="col-xl-3 column">
+                                        <!-- Begin Badge -->
+                                        <div class="widget has-shadow">
+                                            <div class="new-badge text-center">
+                                                <div class="badge-img">
+                                                    <i class="ion-fireball"></i>
+                                                </div>
+                                                <div class="title">
+                                                    <div class="heading">تبریک</div>
+                                                    <div class="text">شما یک امتیاز ویژه گرفتید</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Badge -->
+                                        <!-- Begin Friends -->
+                                        <div class="widget has-shadow">
+                                            <div class="widget-header bordered no-actions d-flex align-items-center">
+                                                <h5>دوستان (104)</h5>
+                                            </div>
+                                            <div class="widget-body">
+                                                <div class="friends-list">
+                                                    <div class="d-flex justify-content-between">
+                                                        <a href="javascript:void(0);">
+                                                            <img src="assets/img/avatar/avatar-01.jpg" class="img-fluid rounded-circle" alt="...">
+                                                        </a>
+                                                        <a href="javascript:void(0);">
+                                                            <img src="assets/img/avatar/avatar-02.jpg" class="img-fluid rounded-circle" alt="...">
+                                                        </a>
+                                                        <a href="javascript:void(0);">
+                                                            <img src="assets/img/avatar/avatar-03.jpg" class="img-fluid rounded-circle" alt="...">
+                                                        </a>
+                                                        <a href="javascript:void(0);">
+                                                            <img src="assets/img/avatar/avatar-05.jpg" class="img-fluid rounded-circle" alt="...">
+                                                        </a>
+                                                        <a href="javascript:void(0);">
+                                                            <img src="assets/img/avatar/avatar-06.jpg" class="img-fluid rounded-circle" alt="...">
+                                                        </a>
+                                                    </div>
+                                                        <div class="margin-top-20 d-flex justify-content-between">
+                                                        <a href="javascript:void(0);">
+                                                            <img src="assets/img/avatar/avatar-04.jpg" class="img-fluid rounded-circle" alt="...">
+                                                        </a>
+                                                        <a href="javascript:void(0);">
+                                                            <img src="assets/img/avatar/avatar-03.jpg" class="img-fluid rounded-circle" alt="...">
+                                                        </a>
+                                                        <a href="javascript:void(0);">
+                                                            <img src="assets/img/avatar/avatar-06.jpg" class="img-fluid rounded-circle" alt="...">
+                                                        </a>
+                                                        <a href="javascript:void(0);">
+                                                            <img src="assets/img/avatar/avatar-07.jpg" class="img-fluid rounded-circle" alt="...">
+                                                        </a>
+                                                        <a class="view-more" href="javascript:void(0);">
+                                                            +93
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Friends -->
+                                        <!-- Begin Photos -->
+                                        <div class="widget has-shadow">
+                                            <div class="widget-header bordered no-actions d-flex align-items-center">
+                                                <h5>آخرین عکس ها</h5>
+                                            </div>
+                                            <div class="widget-body p-3">
+                                                <div class="row m-0">
+                                                    <div class="col-xl-6 col-md-6 col-6 p-0">
+                                                        <a href="javascript:void(0);">
+                                                            <img class="img-fluid rounded border border-white" src="assets/img/background/01.jpg" alt="...">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-xl-6 col-md-6 col-6 p-0">
+                                                        <a href="javascript:void(0);">
+                                                            <img class="img-fluid rounded border border-white" src="assets/img/background/02.jpg" alt="...">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-xl-6 col-md-6 col-6 p-0">
+                                                        <a href="javascript:void(0);">
+                                                            <img class="img-fluid rounded border border-white" src="assets/img/background/03.jpg" alt="...">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-xl-6 col-md-6 col-6 p-0">
+                                                        <a href="javascript:void(0);">
+                                                            <img class="img-fluid rounded border border-white" src="assets/img/background/04.jpg" alt="...">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-xl-6 col-md-6 col-6 p-0">
+                                                        <a href="javascript:void(0);">
+                                                            <img class="img-fluid rounded border border-white" src="assets/img/background/05.jpg" alt="...">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-xl-6 col-md-6 col-6 p-0">
+                                                        <a href="javascript:void(0);">
+                                                            <img class="img-fluid rounded border border-white" src="assets/img/background/06.jpg" alt="...">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Photos -->
+                                        <!-- Begin Social Network -->
+                                        <div class="widget no-bg text-center">
+                                            <ul class="social-network">
+                                                <li>
+                                                    <a href="javascript:void(0);" class="ico-facebook" title="Facebook">
+                                                        <i class="ion-social-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" class="ico-twitter" title="Twitter">
+                                                        <i class="ion-social-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" class="ico-youtube" title="Youtube">
+                                                        <i class="ion-social-youtube"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" class="ico-linkedin" title="Linkedin">
+                                                        <i class="ion-social-linkedin"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- End Social Networks -->
+                                    </div>
+                                    <!-- End Column -->
+                                </div>
+                                <!-- End Row -->
+                            </div>
+                            <!-- End Col -->
+                        </div>
+                        <!-- End Row -->
+                    </div>
+                    <!-- End Container -->
+                    <!-- Begin Page Footer-->
+                    <footer class="main-footer">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 d-flex align-items-center justify-content-xl-start justify-content-lg-start justify-content-md-start justify-content-center">
+                                <p class="text-gradient-02">طراحی شده در | استودیو سپید هنر</p>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 d-flex align-items-center justify-content-xl-end justify-content-lg-end justify-content-md-end justify-content-center">
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="documentation.html">مستندات</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="changelog.html">آپدیت ها</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- End Page Footer -->
+                    <a href="#" class="go-top"><i class="la la-arrow-up"></i></a>
+                    <!-- Offcanvas Sidebar -->
+                    <div class="off-sidebar from-left">
+                        <div class="off-sidebar-container">
+                            <header class="off-sidebar-header">
+                                <ul class="button-nav nav nav-tabs mt-3 mb-3 ml-3" role="tablist" id="weather-tab">
+                                    <li><a class="active" data-toggle="tab" href="#messenger" role="tab" id="messenger-tab">پیام ها</a></li>
+                                    <li><a data-toggle="tab" href="#today" role="tab" id="today-tab">امروز</a></li>
+                                </ul>
+                                <a href="#off-canvas" class="off-sidebar-close"></a>
+                            </header>
+                            <div class="off-sidebar-content offcanvas-scroll auto-scroll">
+                                <div class="tab-content">
+                                    <!-- Begin Messenger -->
+                                    <div role="tabpanel" class="tab-pane show active fade" id="messenger" aria-labelledby="messenger-tab">
+                                        <!-- Begin Chat Message -->
+                                        <span class="date">امروز</span>
+                                        <div class="messenger-message messenger-message-sender">
+                                            <img class="messenger-image messenger-image-default" src="assets/img/avatar/avatar-01.jpg" alt="...">
+                                            <div class="messenger-message-wrapper">
+                                                <div class="messenger-message-content">
+                                                    <p>
+                                                        <span class="mb-2">مرتضی رضائی</span>
+                                                        سلام علی، حالت چطوره؟
+                                                    </p>
+                                                </div>
+                                                <div class="messenger-details">
+                                                    <span class="messenger-message-localization font-size-small">2 دقیقه قبل</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="messenger-message messenger-message-recipient">
+                                            <div class="messenger-message-wrapper">
+                                                <div class="messenger-message-content">
+                                                    <p>
+                                                        سلام مرتضی، خوبم تو چطوری؟
+                                                    </p>
+                                                    <p>
+                                                        من دارم روی آپدیت بعدی بهتام کار میکنم
+                                                    </p>
+                                                </div>
+                                                <div class="messenger-details">
+                                                    <span class="messenger-message-localisation font-size-small">3 دقیقه قبل</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="messenger-message messenger-message-sender">
+                                            <img class="messenger-image messenger-image-default" src="assets/img/avatar/avatar-04.jpg" alt="...">
+                                            <div class="messenger-message-wrapper">
+                                                <div class="messenger-message-content">
+                                                    <p>
+                                                        <span class="mb-2">علی نیکو</span>
+                                                        من نمیتونم منتظر دیدن تو بشم
+                                                    </p>
+                                                </div>
+                                                <div class="messenger-details">
+                                                    <span class="messenger-message-localization font-size-small">5 دقیقه قبل</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="messenger-message messenger-message-recipient">
+                                            <div class="messenger-message-wrapper">
+                                                <div class="messenger-message-content">
+                                                    <p>
+                                                        منم همچنین
+                                                    </p>
+                                                </div>
+                                                <div class="messenger-details">
+                                                    <span class="messenger-message-localisation font-size-small">10 دقیقه قبل</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="date">Yesterday</span>
+                                        <div class="messenger-message messenger-message-sender">
+                                            <img class="messenger-image messenger-image-default" src="assets/img/avatar/avatar-05.jpg" alt="...">
+                                            <div class="messenger-message-wrapper">
+                                                <div class="messenger-message-content">
+                                                    <p>
+                                                        من امشب سرور رو آپدیت میکنم
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="messenger-message messenger-message-recipient">
+                                            <div class="messenger-message-wrapper">
+                                                <div class="messenger-message-content">
+                                                    <p>
+                                                        تو نمیدونی مشکل از کجاست؟
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="messenger-message messenger-message-sender">
+                                            <img class="messenger-image messenger-image-default" src="assets/img/avatar/avatar-05.jpg" alt="...">
+                                            <div class="messenger-message-wrapper">
+                                                <div class="messenger-message-content">
+                                                    <p>
+                                                        نه نمیدونم!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="messenger-message messenger-message-recipient">
+                                            <div class="messenger-message-wrapper">
+                                                <div class="messenger-message-content">
+                                                    <p>
+                                                        باشه!
+                                                    </p>
+                                                    <p>
+                                                        بعدا میبینمت!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Chat Message -->
+                                        <!-- Begin Message Form -->
+                                        <div class="enter-message">
+                                            <div class="enter-message-form">
+                                                <input type="text" placeholder="پیام خود را وارد کنید..."/>
+                                            </div>
+                                            <div class="enter-message-button">
+                                                <a href="#" class="send"><i class="ion-paper-airplane"></i></a>
+                                            </div>
+                                        </div>
+                                        <!-- End Message Form -->
+                                    </div>
+                                    <!-- End Messenger -->
+                                    <!-- Begin Today -->
+                                    <div role="tabpanel" class="tab-pane fade" id="today" aria-labelledby="today-tab">
+                                        <!-- Begin Today Stats -->
+                                        <div class="sidebar-heading pt-0">امروز</div>
+                                        <div class="today-stats mt-3 mb-3">
+                                            <div class="row">
+                                                <div class="col-4 text-center">
+                                                    <i class="la la-users"></i>
+                                                    <div class="counter">264</div>
+                                                    <div class="heading">کاربر</div>
+                                                </div>
+                                                <div class="col-4 text-center">
+                                                    <i class="la la-cart-arrow-down"></i>
+                                                    <div class="counter">360</div>
+                                                    <div class="heading">فروش</div>
+                                                </div>
+                                                <div class="col-4 text-center">
+                                                    <i class="la la-money"></i>
+                                                    <div class="counter">ریال 4,565</div>
+                                                    <div class="heading">موجودی</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Today Stats -->
+                                        <!-- Begin Friends -->
+                                        <div class="sidebar-heading">دوستان</div>
+                                        <div class="quick-friends mt-3 mb-3">
+                                            <ul class="list-group w-100">
+                                                <li class="list-group-item">
+                                                    <div class="media">
+                                                        <div class="media-left align-self-center mr-3">
+                                                            <img src="assets/img/avatar/avatar-04.jpg" alt="..." class="img-fluid rounded-circle" style="width: 35px;">
+                                                        </div>
+                                                        <div class="media-body align-self-center">
+                                                            <a href="javascript:void(0);">علی نیکو</a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="media">
+                                                        <div class="media-left align-self-center mr-3">
+                                                            <img src="assets/img/avatar/avatar-03.jpg" alt="..." class="img-fluid rounded-circle" style="width: 35px;">
+                                                        </div>
+                                                        <div class="media-body align-self-center">
+                                                            <a href="javascript:void(0);">محمد نوری</a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="media">
+                                                        <div class="media-left align-self-center mr-3">
+                                                            <img src="assets/img/avatar/avatar-04.jpg" alt="..." class="img-fluid rounded-circle" style="width: 35px;">
+                                                        </div>
+                                                        <div class="media-body align-self-center">
+                                                            <a href="javascript:void(0);">مازیار نودهی</a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="media">
+                                                        <div class="media-left align-self-center mr-3">
+                                                            <img src="assets/img/avatar/avatar-05.jpg" alt="..." class="img-fluid rounded-circle" style="width: 35px;">
+                                                        </div>
+                                                        <div class="media-body align-self-center">
+                                                            <a href="javascript:void(0);">مرتضی حیدری</a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="media">
+                                                        <div class="media-left align-self-center mr-3">
+                                                            <img src="assets/img/avatar/avatar-06.jpg" alt="..." class="img-fluid rounded-circle" style="width: 35px;">
+                                                        </div>
+                                                        <div class="media-body align-self-center">
+                                                            <a href="javascript:void(0);">احسان رضایی</a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- End Friends -->
+                                        <!-- Begin Settings -->
+                                        <div class="sidebar-heading">تنظیمات</div>
+                                        <div class="quick-settings mt-3 mb-3">
+                                            <ul class="list-group w-100">
+                                                <li class="list-group-item">
+                                                    <div class="media">
+                                                        <div class="media-body align-self-center">
+                                                            <p class="text-dark">اعلان های ایمیل</p>
+                                                        </div>
+                                                        <div class="media-right align-self-center">
+                                                            <label>
+                                                                <input class="toggle-checkbox" type="checkbox" checked>
+                                                                <span>
+                                                                    <span></span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="media">
+                                                        <div class="media-body align-self-center">
+                                                            <p class="text-dark">صدای اعلان ها</p>
+                                                        </div>
+                                                        <div class="media-right align-self-center">
+                                                            <label>
+                                                                <input class="toggle-checkbox" type="checkbox">
+                                                                <span>
+                                                                    <span></span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="media">
+                                                        <div class="media-body align-self-center">
+                                                            <p class="text-dark">صدای پیام چت</p>
+                                                        </div>
+                                                        <div class="media-right align-self-center">
+                                                            <label>
+                                                                <input class="toggle-checkbox" type="checkbox" checked>
+                                                                <span>
+                                                                    <span></span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- End Settings -->
+                                    </div>
+                                    <!-- End Today -->
+                                </div>
+                            </div>
+                            <!-- End Offcanvas Container -->
+                        </div>
+                        <!-- End Offsidebar Container -->
+                    </div>
+                    <!-- End Offcanvas Sidebar -->
+                </div>
+                <!-- End Content -->
+            </div>
+            <!-- End Page Content -->
+        </div>
+        <!-- Begin Vendor Js -->
+        <script src="assets/vendors/js/base/jquery.min.js"></script>
+        <script src="assets/vendors/js/base/core.min.js"></script>
+        <!-- End Vendor Js -->
+        <!-- Begin Page Vendor Js -->
+        <script src="assets/vendors/js/nicescroll/nicescroll.min.js"></script>
+        <script src="assets/vendors/js/app/app.min.js"></script>
+        <!-- End Page Vendor Js -->
+    </body>
+</html>
